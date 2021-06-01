@@ -66,7 +66,7 @@ kctl() {
                 echo
         done
 
-        if [ "$i" -ge 10 ]; then
+        if [ "$i" -ge 1000 ]; then
                 RED='\033[0;31m'
                 NC='\033[0m'
                 echo -ne "${RED}Could not finish setting up NATS due to errors in the cluster${NC}"
