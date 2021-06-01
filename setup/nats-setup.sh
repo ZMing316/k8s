@@ -46,7 +46,7 @@ export NSC_HOME=$NSC_DIR/accounts
 
 kctl() {
         i=0
-        until [ $i -ge 10 ]
+        until [ $i -ge 1000 ]
         do
                 kubectl "$@" && break
                 i=$((i+1))
