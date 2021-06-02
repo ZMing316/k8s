@@ -299,8 +299,8 @@ main() {
                         install_nats_surveyor
                 fi
         fi
-        kctl wait --for=condition=Ready pod/nats-0   --timeout=60s
-        kctl wait --for=condition=Ready pod/nats-box --timeout=60s
+        kctl wait --for=condition=Ready pod/nats-0   --timeout=6000s
+        kctl wait --for=condition=Ready pod/nats-box --timeout=6000s
 
         echo -e "${CYAN}"
         echo " +------------------------------------------+"
